@@ -17,7 +17,7 @@ def laat_home_zien():
 
 
 
-@app.route('/verzenden/<bericht>')
+@app.route('/verzenden/<naam>/<bericht>')
 def verstuur_bericht(bericht):
     cur.execute("")
 
