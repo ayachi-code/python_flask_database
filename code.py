@@ -13,4 +13,10 @@ def laat_home_zien():
     return render_template("home.html")
 
 
+
+@app.route('/verzenden/<bericht>')
+
+
+
+
 app.run()
