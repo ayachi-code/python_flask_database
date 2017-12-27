@@ -15,7 +15,8 @@ def laat_home_zien():
 
 
 @app.route('/verzenden/<bericht>')
-
+def verstuur_bericht():
+    return "test"
 
 
 
