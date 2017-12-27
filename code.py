@@ -1,8 +1,8 @@
 #importeer mysqldb
 import MySQLdb
 
-database_connectie = MySQLdb.connect(host="localhost",user="root",passwd="/0",db="berichten")
-
+#connecteren met database
+database_connectie = MySQLdb.connect(host="localhost",user="root",passwd="almujaahid/0",db="berichten")
 cur = database_connectie.cursor()
 
 #importeer FLask
@@ -16,10 +16,11 @@ def laat_home_zien():
     return render_template("home.html")
 
 
-
+#Als iemand een bericht gaat versturen
 @app.route('/verzenden/<naam>/<bericht>')
-def verstuur_bericht(bericht):
-    cur.execute("")
+def verstuur_bericht(naam,bericht):
+    pass
+
 
 
 
