@@ -1,6 +1,8 @@
 #importeer mysqldb
 import MySQLdb
 
+database_connectie = MySQLdb.connect(host="localhost",user="root",passwd="/0",db="chat")
+
 
 #importeer FLask
 from flask import *
