@@ -3,6 +3,7 @@ import MySQLdb
 
 database_connectie = MySQLdb.connect(host="localhost",user="root",passwd="/0",db="chat")
 
+cur = database_connectie.cursor()
 
 #importeer FLask
 from flask import *
