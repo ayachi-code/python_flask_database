@@ -1,7 +1,7 @@
 #importeer mysqldb
 import MySQLdb
 
-database_connectie = MySQLdb.connect(host="localhost",user="root",passwd="/0",db="chat")
+database_connectie = MySQLdb.connect(host="localhost",user="root",passwd="/0",db="berichten")
 
 cur = database_connectie.cursor()
 
@@ -19,7 +19,7 @@ def laat_home_zien():
 
 @app.route('/verzenden/<bericht>')
 def verstuur_bericht(bericht):
-    return "test"
+    cur.execute("")
 
 
 
