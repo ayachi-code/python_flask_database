@@ -1,3 +1,7 @@
+#importeer mysqldb
+import MySQLdb
+
+
 #importeer FLask
 from flask import *
 app = Flask(__name__)
