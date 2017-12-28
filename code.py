@@ -26,7 +26,7 @@ def verstuur_bericht(naam,bericht):
 
 @app.errorhandler(404)
 def error(e):
-    return "fout"
+    return render_template("error.html")
 
 
 
