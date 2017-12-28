@@ -29,6 +29,7 @@ def verstuur_bericht(naam,bericht):
 def zien():
     return render_template("zien.html")
     cur.execute("SELECT * FROM gegevens")
+    gegevens = cur.fetchall()
 
 
 app.run(host="192.168.178.185",port=3000)
