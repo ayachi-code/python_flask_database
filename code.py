@@ -21,7 +21,7 @@ def laat_home_zien():
 def verstuur_bericht(naam,bericht):
     cur.execute("INSERT INTO gegevens(naam,bericht) VALUES(%s,%s)", (naam,bericht))
     database_connectie.commit()
-    return "gelukt"
+    return render_template("gelukt.html",persoon_naam=naam,persoon_bericht=bericht)
 
 app.run(host="192.168.178.185",port=3000)
 
