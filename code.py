@@ -1,5 +1,6 @@
 #importeer mysqldb
 import MySQLdb
+from itertools import chain
 
 #connecteren met database
 database_connectie = MySQLdb.connect(host="localhost",user="root",passwd="almujaahid/0",db="berichten")
@@ -23,19 +24,6 @@ def verstuur_bericht(naam,bericht):
     database_connectie.commit()
     return render_template("gelukt.html",persoon_naam=naam,persoon_bericht=bericht)
 
-
-
-#als iemand naar zien gaat
-@app.route('/zien')
-def zien():
-    #execute query
-    cur.execute("SELECT * FROM gegevens")
-    #fetch gegevens
-    gegevens = cur.fetchall()
-    for rij in gegevens:
-        print(rij[0])
-    #render template
-    return render_template("zien.html")
 
 
 
