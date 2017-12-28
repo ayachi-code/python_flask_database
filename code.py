@@ -26,3 +26,4 @@ app.run(host="192.168.178.185",port=3000)
 
 
 cur.close()
+database_connectie.close()
