@@ -25,5 +25,6 @@ def verstuur_bericht(naam,bericht):
 app.run(host="192.168.178.185",port=3000)
 
 
+#sluiten...
 cur.close()
 database_connectie.close()
