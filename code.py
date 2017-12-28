@@ -20,8 +20,9 @@ def laat_home_zien():
 @app.route('/verzenden/<naam>/<bericht>')
 def verstuur_bericht(naam,bericht):
     pass
+    #cur.execute("INSERT INTO ")
 
 
 
 
-app.run()
+app.run(host="192.168.178.185",port=3000)
