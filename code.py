@@ -24,6 +24,9 @@ def verstuur_bericht(naam,bericht):
     database_connectie.commit()
     return render_template("gelukt.html",persoon_naam=naam,persoon_bericht=bericht)
 
+@app.errorhandler(404)
+def error(e):
+    return "fout"
 
 
 
