@@ -23,3 +23,6 @@ def verstuur_bericht(naam,bericht):
     database_connectie.commit()
 
 app.run(host="192.168.178.185",port=3000)
+
+
+cur.close()
