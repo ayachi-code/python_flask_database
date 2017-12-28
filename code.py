@@ -25,11 +25,18 @@ def verstuur_bericht(naam,bericht):
 
 
 
+#als iemand naar zien gaat
 @app.route('/zien')
 def zien():
-    return render_template("zien.html")
+    #execute query
     cur.execute("SELECT * FROM gegevens")
+    #fetch gegevens
     gegevens = cur.fetchall()
+    for rij in gegevens:
+        print(rij[0])
+    #render template
+    return render_template("zien.html")
+
 
 
 app.run(host="192.168.178.185",port=3000)
