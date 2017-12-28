@@ -27,7 +27,7 @@ def verstuur_bericht(naam,bericht):
 
 @app.route('/zien')
 def zien():
-    return "hey"
+    return render_template("zien.html")
 
 
 app.run(host="192.168.178.185",port=3000)
